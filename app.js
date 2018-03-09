@@ -1,0 +1,1 @@
+var queryURL = "https://developer.nytimes.com/articles.json?q=" + 
