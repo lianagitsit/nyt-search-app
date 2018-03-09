@@ -7,36 +7,64 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
         <title>New York Times search</title>
+    <title>New York Times search</title>
 </head>
 
 <body>
     <!-- header -->
-    <div class="jumbotron">
+    <div class="jumbotron text-center">
         <h1>New York Times Seach!</h1>
         <p>some text</p>
-
     </div>
-    <div id="search">
-    <!-- search term -->
-    <div class="input-group input-group-lg">
-        <h3>search term</h3>
-        <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div id="search">
+                            <!-- search term -->
+                            <div class="input-group input-group-lg">
+                                <h3>search term</h3>
+                                <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon1">
+                            </div>
+
+                            <!-- number of records to retrive -->
+                            <div class="input-group input-group-lg">
+                                <h3>number of records to retrive</h3>
+                                <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon1">
+                            </div>
+                            <!-- Start Year (options) -->
+                            <div class="input-group input-group-lg">
+                                <h3>Start Year (optional)</h3>
+                                <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon1">
+                            </div>
+                            <!-- End Year (options) -->
+                            <div class="input-group input-group-lg">
+                                <h3>End Year (optional)</h3>
+                                <input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon1">
+                            </div>
+                            <!-- buttons -->
+                            <button id="search" class="btn">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true">Search</span>
+                            </button>
+                            <button id="search" class="btn">
+                                <span class="glyphicon glyphicon-trash" aria-hidden="true">Search</span>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="results">
+            <div class="container-fluid">Results</div>
+                    <div class="row"></div>
+                        <div class="col-md-9"></div>
     </div>
 
-    <!-- number of records to retrive -->
-    <div class="input-group input-group-lg">
-            <h3>number of records to retrive</h3>
-            <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
-        </div>
-    <!-- Start Year (options) -->
-    <div class="input-group input-group-lg">
-            <h3>number of records to retrive</h3>
-            <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
-        </div>
-   
-</div>
 
-    <div id="results"></div>
+    <script src="app.js"></script>
 </body>
 
 </html>
